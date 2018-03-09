@@ -45,7 +45,7 @@ Trace:
   Exit code: 1
   Command: sh
   Arguments: -c node ./bin/www
-  Directory: /Users/nicolasacevedosandoval/parcial1-webdev/myApp
+  Directory: /Users/nicolasacevedosandoval/parcial1-webdev
   Output:
   
       at ProcessTermError.MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
