@@ -1,20 +1,27 @@
-# node_express_react
+# Description
 
-Example node + express + react + Mongo app generate for the [WebDev class at uniandes](johnguerra.co/classes/webDevelopment_spring_2018/)
+This is a web application that uses instragram public information in order to compare the number of likes in photos of 2 users. You give the aplication two public accounts and it tells you which on has more likes in their last photos. Also, it provides statistics about a certain user: mean likes, mean comments, their follower ratio and their best picture and worst picture (based on the amount of likes they have recieved.). Finally, the record of the "fights" are stored and displayed. 
 
-Express app generate using express generator and react app on the frontend folder with create-react-app.
+# Getting started
 
-# Running the demo
+In order to run this aplication you have to follow the following steps:
 
-```
-npm install
-cd frontend
-yarn install
-yarn build
-cd ..
-npm start
-```
-Then open your browser on http://localhost:3001
+npm install Go to the ./myapp/frontend folder and run cd frontend yarn install yarn build
+Then go back to /myapp folder and run cd .. yarn start
+You can then begin using the project! Open your browser on http://localhost:3001
+Note: You need to have Nodejs, npm and yarn installed
 
-Requires a Mongo server with a database running locally, change the code to fit your own parameters
+Currently the project is running on a mLab, you have to add the following enviroment variables to run it locally. 
+
+url: The url where mongo is listening. It should look something like this..  mongodb://localhost:xxxx/<dbname> or mongodb://<user>:<pass>@dsxxxxx.mlab.com:xxxx/<dbname> 
+
+mlabDatabase : The name of your mlab database. 
+
+You have to create a collection with the name "parcial1". 
+
+
+
+
+
+
 
