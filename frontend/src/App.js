@@ -27,6 +27,10 @@ class App extends Component {
   }
 
   winner(){
+    if(this.state.followers === 0 || this.state.followers1 === 0)
+    {
+      window.alert("No ha sido posible encontrar uno de los usuarios especificado");
+    }
      
     if (this.state.followers > this.state.followers1)
     {
