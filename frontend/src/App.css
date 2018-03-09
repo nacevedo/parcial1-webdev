@@ -1,0 +1,147 @@
+
+button, .button {
+  background-color: #DA4453;
+  border: none;
+  text-transform: uppercase;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 12px;
+  -webkit-transition: background-color 0.3s linear;
+     -moz-transition: background-color 0.3s linear;
+       -o-transition: background-color 0.3s linear;
+          transition: background-color 0.3s linear;
+}
+
+.main {
+  color:#ffffff;
+  font-size: 50px;
+}
+
+h1 {
+  font-size: 300%; 
+  color:#FFAE56; 
+  align-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+button:hover, .button:hover {
+  background-color: #363636;
+}
+* {
+  background-color: #072A52;
+}
+
+
+body {
+  background-color: #072A52;
+  font-size: 25px;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+#intro {
+  
+  background-repeat: no-repeat;
+  height: 600px;
+  background-size: cover; 
+  background-position: right center; 
+  
+}
+
+#about, #hobbies {
+  
+  background-color: #072A52; 
+  padding-bottom: 30px;
+  padding-top: 40px;
+}
+
+#skills, #contact {
+  
+  background-color: #051D38; 
+  padding-bottom: 30px;
+  padding-top: 40px;
+}
+
+
+#name {
+  display: none;
+}
+
+p, div {
+  
+  color:#CDCDCD;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+h3, h4, h5{
+  color: #FFAE56;
+}
+
+h2 {
+  position: relative;
+  text-align: center;
+  font-family: 'Crete Round', serif;
+  font-weight: lighter;
+}
+
+h3 {
+  text-align: center; 
+  font-size: 200%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px #cccccc;
+}
+
+h4 {
+  text-align: center; 
+  font-size: 150%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+h5 {
+  text-align: center; 
+  font-size: 120%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+
+
+ul {
+  padding: 0;
+}
+
+li {
+  margin-top: 20px; 
+  color: #fff;
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
