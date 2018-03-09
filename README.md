@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # node_express_react
 
 Example node + express + react + Mongo app generate for the [WebDev class at uniandes](johnguerra.co/classes/webDevelopment_spring_2018/)
@@ -19,6 +18,3 @@ Then open your browser on http://localhost:3001
 
 Requires a Mongo server with a database running locally, change the code to fit your own parameters
 
-=======
-# parcial1-webdev
->>>>>>> f099c08bf8bdecebbb317d66d99f8ee39cebc3ec
