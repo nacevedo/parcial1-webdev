@@ -33,7 +33,7 @@ class ProfileStats extends Component {
       //cuento cuantos likes tiene 
       var cuentaLikes = 0; 
       var cuentaCom = 0; 
-      var nodes = data.user.media.nodes; 
+      var nodes = data.graphql.user.edge_owner_to_timeline_media.edges; 
       var max = 0; 
       var min = 100000000; 
       var mejorImagen = ''; 
@@ -42,19 +42,19 @@ class ProfileStats extends Component {
 
       for(let i =0 ; i < nodes.length; i++)
       {
-        var valorLikes = data.user.media.nodes[i].likes.count; 
-        var valorCom = data.user.media.nodes[i].comments.count;
+        var valorLikes = data.graphql.user.edge_owner_to_timeline_media.edges[i].node.edge_liked_by.count; 
+        var valorCom = data.graphql.user.edge_owner_to_timeline_media.edges[i].node.edge_media_to_comment.count;
         cuentaLikes += valorLikes;
         cuentaCom += valorCom;
         if (valorLikes > max) 
         {
-          mejorImagen = data.user.media.nodes[i].thumbnail_src;
+          mejorImagen = data.graphql.user.edge_owner_to_timeline_media.edges[i].node.display_url;
           max=valorLikes;
         }
         if(valorLikes < min)
         {
           min = valorLikes; 
-          peorImagen = data.user.media.nodes[i].thumbnail_src;
+          peorImagen = data.graphql.user.edge_owner_to_timeline_media.edges[i].node.display_url;
         }
       }
         console.log("esta es la cuenta de likes "+cuentaLikes);
@@ -62,8 +62,8 @@ class ProfileStats extends Component {
         var meanl = cuentaLikes/nodes.length; 
         var meanc = cuentaCom/nodes.length;
 
-        var fby = data.user.followed_by.count;
-        var f = data.user.follows.count;
+        var fby = data.graphql.user.edge_followed_by.count;
+        var f = data.graphql.user.edge_follow.count;
 
         var ratiof = fby/f; 
 

@@ -66,14 +66,15 @@ class App extends Component {
         window.alert("No ha sido posible encontrar al usuario especificado");
       }
 
+
       //cuento cuantos likes tiene 
       var cuenta = 0; 
-      var nodes = data.user.media.nodes; 
+      var nodes = data.graphql.user.edge_owner_to_timeline_media.edges; 
       console.log(nodes);
 
       for(let i =0 ; i < nodes.length; i++)
       {
-        var valor = data.user.media.nodes[i].likes.count; 
+        var valor = data.graphql.user.edge_owner_to_timeline_media.edges[i].node.edge_liked_by.count; 
         console.log(valor);
         cuenta += valor;
       }
