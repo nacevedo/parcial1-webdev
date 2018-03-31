@@ -15,7 +15,8 @@ Note: You need to have Nodejs, npm and yarn installed
 
 Currently the project is running on a mLab, you have to add the following enviroment variables to run it locally. 
 
-url: The url where mongo is listening. It should look something like this..  mongodb://<user>:<pass>@dsxxxxx.mlab.com:xxxx/<dbname> 
+url: The url where mongo is listening. It should look something like this..  
+**mongodb://<user<user>>:<pass<pass>>@dsxxxxx.mlab.com:xxxx/<dbname>**
 
 mlabDatabase : The name of your mlab database. 
 
