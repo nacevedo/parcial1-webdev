@@ -4,7 +4,7 @@ This is a web application that uses instragram public information in order to co
 
 This is the url of the project: https://instragramersfight.herokuapp.com
 
-# Creative adition
+# Creative adittion
 It provides statistics about a certain user: mean likes, mean comments, their follower ratio and their best picture and worst picture (based on the amount of likes they have recieved.). 👨🏻‍🎨
 
 # Getting started
